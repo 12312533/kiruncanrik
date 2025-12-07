@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 Peringatan Penting untuk Syakira Cantik! 🚨</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fce4ec; /* Warna latar belakang merah muda lembut */
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 550px;
+            width: 90%;
+            border: 5px solid #e91e63; /* Border Merah Muda Cerah */
+        }
+
+        .profile-image {
+            width: 150px; /* Ukuran gambar */
+            height: 150px;
+            border-radius: 50%; /* Membuat gambar bulat */
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #f06292;
+            animation: float 3s infinite ease-in-out alternate; /* Animasi mengambang */
+        }
+
+        h1 {
+            color: #c2185b; /* Merah Muda Gelap */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: pulse 1s infinite alternate; /* Animasi membesar-mengecil */
+        }
+
+        .name-tag {
+            color: #d81b60;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #333333;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .emoji-warning {
+            font-size: 6em;
+            margin: 20px 0;
+            display: block;
+            animation: shake 0.5s infinite, flash 1s infinite step-start;
+        }
+
+        .button-action {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .button-action:hover {
+            background-color: #f50057;
+        }
+
+        /* --- ANIMASI CSS --- */
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            50% { transform: translate(-3px, 0px) rotate(1deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+        @keyframes flash {
+            50% { opacity: 0; }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="KIRUN.jpg" alt="Syakira Cantik" class="profile-image"> 
+        
+        <div class="name-tag">Syakira Cantik</div>
+
+        <span class="emoji-warning">😤🚿</span> 
+
+        <h1>ANDA SERIUS?! BELUM MANDI, SYAKIRA?!</h1>
+        
+        <p>
+            **Gawat!** Sudah berapa lama kecantikan ini belum disentuh air sabun? Wajahmu sudah *on-point*, tapi bau badan tidak bisa disembunyikan di dunia maya! 
+            Tolong, segera lakukan tindakan penyelamatan aroma!
+            <br><br>
+            **MANDI SEKARANG JUGA!** Jangan biarkan kecantikanmu kalah oleh aroma tak terduga!
+        </p>
+
+        <button class="button-action" onclick="acknowledge()">
+            OKAY! AKU SIAP HARUM LAGI!
+        </button>
+
+        <p id="feedback" style="margin-top: 20px; color: #4caf50; font-weight: bold;"></p>
+    </div>
+
+    <script>
+        function acknowledge() {
+            const feedback = document.getElementById('feedback');
+            const button = document.querySelector('.button-action');
+
+            feedback.innerHTML = "Itu baru Syakira! Sekarang pergi dan jangan kembali sebelum wangi seperti bunga! 🌸";
+            button.style.backgroundColor = '#8bc34a'; // Ganti warna jadi hijau muda
+            button.innerHTML = "Janji Telah Ditepati (Syakira sudah wangi)";
+            button.onclick = null;
+        }
+    </script>
+
+</body>
+</html>
